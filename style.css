@@ -26,9 +26,11 @@ html{
 body{
     background-color: var(--black-);
     padding-bottom: 6.5rem;
+    
 }
 section{
     padding: 5rem 9%;
+    overflow: hidden;
 
 }
 .btn {
@@ -130,7 +132,6 @@ section{
     padding: 1rem 0;
     line-height: 2;
 }
-
 
 
 
