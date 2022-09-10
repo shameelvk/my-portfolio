@@ -53,11 +53,14 @@ section{
     color: crimson;
     border-radius: 50%;
     margin-left: 1rem;
-    transition: .3s linear;
+    /* transition: .3s linear; */
+    transition: all .2s ease-in-out;
+   
 }
 .btn:hover i {
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
     color: #0d0d0d;
+    transform: scale(.9);
 
   }
 
