@@ -56,6 +56,7 @@ section{
 .btn:hover i {
     margin-left: 2.5rem;
     color: #0d0d0d;
+
   }
 
 .navbar{
@@ -69,6 +70,7 @@ section{
   
 
 }
+
 .navbar a{
     padding: 2rem;
     font-size: 2rem;
@@ -152,6 +154,9 @@ section{
     .navbar a:hover{
         padding-bottom: 1.5rem;
     }
+    /* .navbar{
+        position: fixed;
+    } */
     
 }
 
@@ -159,5 +164,6 @@ section{
     html{
         font-size: 50%;
     }
+    
     
 }
