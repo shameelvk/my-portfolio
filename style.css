@@ -19,6 +19,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
 
@@ -134,6 +135,40 @@ section{
     color: var(--lightclr-);
     padding: 1rem 0;
     line-height: 2;
+}
+
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: calc(100vh - 6.5rem);
+}
+.about .content {
+    flex: 1 1 42rem;
+
+}
+.about .content h3 {
+    color: #fff;
+    font-size: 4rem;
+    padding-bottom: .5rem;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--lightclr-);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .image {
+    flex: 1 1 42rem;
+    text-align: center;
+}
+.about .image img{
+    height: 45rem;
+    width: 45rem;
 }
 
 
