@@ -193,9 +193,12 @@ section{
     .navbar a:hover{
         padding-bottom: 1.5rem;
     }
-    /* .navbar{
-        position: fixed;
-    } */
+
+
+    .about .image img{
+        display: none;
+    }
+   
     
 }
 
@@ -203,6 +206,8 @@ section{
     html{
         font-size: 50%;
     }
+
+
     
     
 }
