@@ -153,7 +153,7 @@ section{
     color: #fff;
     font-size: 4rem;
     padding-bottom: .5rem;
-    text-align: ;
+    text-align: center;
 }
 
 .about .content p {
@@ -173,32 +173,84 @@ section{
 }
 
 
-.portfolio .heading h3 {
+
+
+
+
+
+
+/* portfolio section */
+.portfolio .heading{
     color: #fff;
     font-size: 4rem;
-    padding-bottom: .5rem;
-    text-align: ;
+    padding-bottom: 2.5rem;
+    text-align:center ;
 }
 
+.portfolio {
+    text-align: center;
+}
 
-
-
-
-.Portfolio.box-container{
+.portfolio .box-container {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    justify-items: center;
+}
+.portfolio .box-container .box {
+    height: 30rem;
+    width: 30rem;
+    overflow: hidden;
     position: relative;
-    width: 200px;
-    height: 250px;
-    background-color: #dc143c;
 }
-.portfolio .box-container .box{
-    position:absolute;
-    width: 100%;
+.portfolio .box-container .box img {
     height: 100%;
-    transform-style: preserve-3d;
-    transition: all .5s ease;
-    background-color: yellow;
-
+    width: 100%;
+    object-fit: cover;
 }
+.portfolio .box-container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transform: translatex(100%);
+    transition: .2s linear;
+  }
+.portfolio .box-container .box:hover .content {
+        transform: translatex(0%);
+  }
+.portfolio .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .portfolio .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #aaa;
+  }
+.portfolio .box-container .box .content a {
+    font-size: 2rem;
+    color: crimson;
+  }
+.portfolio .box-container .box .content a:hover {
+    color: #fff;
+  }
+  .portfolio .box-container .box .content p:hover {
+    color: #fff;
+    /* font-weight: 500; */
+  }
+  
 
 
 
@@ -222,9 +274,14 @@ section{
     .navbar a:hover{
         padding-bottom: 1.5rem;
     }
+    .home .image img {
+        height: 40rem;
+        width: 40rem;
+    }
     .about .image img{
         display: none;
     }
+    
 
 
    
@@ -244,6 +301,13 @@ section{
     }
     .about{
         flex-wrap: wrap-reverse;
+    }
+    .portfolio .box-container .box {
+        height: 25rem;
+        width: 25rem;
+    }
+    .portfolio .box-container {
+        gap:3rem;
     }
 
 
